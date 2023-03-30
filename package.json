@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "created navLink for active links",
   "main": "./dist/index.jsx",
-  "module": "./src/index.js",
+  "module": "index.js",
   "scripts": {
     "build": "next build",
     "start": "next start"
@@ -16,9 +16,6 @@
     "nav link",
     "library"
   ],
-  "exports": {
-    ".": "./dist/index.js"
-  },
   "author": "mhmddev",
   "license": "ISC",
   "bugs": {

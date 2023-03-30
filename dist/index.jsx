@@ -10,6 +10,7 @@ const NavLink = ({className, href, activeClass, ...label}) => {
         if (router.pathname === href) {
             return setActive(true)
         }
+        return setActive(false)
     }, [])
 
     useEffect(() => {
