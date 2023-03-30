@@ -1,0 +1,32 @@
+{
+  "name": "nav-link",
+  "version": "1.0.0",
+  "description": "created navLink for active links",
+  "main": "./dist/index.jsx",
+  "module": "./src/index.js",
+  "scripts": {
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhmd-bagha/nav-link.git"
+  },
+  "keywords": [
+    "nav link",
+    "library"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "author": "mhmddev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhmd-bagha/nav-link/issues"
+  },
+  "homepage": "https://github.com/mhmd-bagha/nav-link#readme",
+  "devDependencies": {
+    "next": "^13.2.4",
+    "react": "^18.2.0"
+  }
+}

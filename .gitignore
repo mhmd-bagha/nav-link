@@ -1,0 +1,14 @@
+#dependencies
+/node_modules
+
+# production
+/build
+
+# next.js
+/.next
+
+# ide
+/.idea
+
+# debug
+npm-debug.log*
