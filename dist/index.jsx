@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {useRouter} from "next/router";
 
-const NavLink = ({className, href, activeClass, label}) => {
+const NavLink = ({className, href, activeClass = '', label}) => {
     const router = useRouter()
 
     return (
