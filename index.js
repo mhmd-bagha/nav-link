@@ -1,3 +1,3 @@
-import NavLink from "./dist/index";
+import NavLink from "./dist";
 
 export default NavLink
