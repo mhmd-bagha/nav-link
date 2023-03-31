@@ -1,25 +1,12 @@
 import Link from "next/link";
 import {useRouter} from "next/router";
-import {useCallback, useEffect, useState} from "react";
 
-const NavLink = ({className, href, activeClass, ...label}) => {
+const NavLink = ({className, href, activeClass, label}) => {
     const router = useRouter()
-    const [active, setActive] = useState(false)
-
-    const ChangeActiveStatus = useCallback(() => {
-        if (router.pathname === href) {
-            return setActive(true)
-        }
-        return setActive(false)
-    }, [])
-
-    useEffect(() => {
-        ChangeActiveStatus()
-    }, [])
 
     return (
         <Link href={href}
-              className={() => (active) ? `${className} ${(activeClass !== '') ? activeClass : 'active'}` : className}>{label}</Link>
+              className={`${className} ${(router.pathname === href) ?? (activeClass !== '') ? activeClass : 'active'}`}>{label}</Link>
     )
 }
 
