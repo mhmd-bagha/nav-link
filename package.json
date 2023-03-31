@@ -1,6 +1,6 @@
 {
   "name": "nav-link",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "created navLink for active links",
   "main": "./dist/index.jsx",
   "module": "index.js",
